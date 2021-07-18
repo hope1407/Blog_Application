@@ -7,9 +7,9 @@ if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(precess.env.JAWSDB_URL);
 } else {
     sequelize = new Sequelize(
-        precess.env.DB_NAME,
-        precess.env.DB_USER,
-        precess.env.DB_PASSWORD,
+        process.env.DB_NAME,
+        process.env.DB_USER,
+        process.env.DB_PASSWORD,
         {
             host: 'localhost',
             dialect: 'mysql',
