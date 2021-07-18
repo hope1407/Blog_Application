@@ -1,0 +1,21 @@
+{
+  "name": "Blog_Application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hope1407/Blog_Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hope1407/Blog_Application/issues"
+  },
+  "homepage": "https://github.com/hope1407/Blog_Application#readme"
+}
