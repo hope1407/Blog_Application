@@ -57,7 +57,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
         res.render('dashboard', {
             ...user,
-            logged_in: true,
+            loggedIn: true,
         });
     } catch (err){
         res.status(500).json(err);
@@ -65,10 +65,12 @@ router.get('/dashboard', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
+    if (req.session.loggedIn) {
         res.redirect('/');
         return
+    } else {
+        res.render('login')
     }
-    res.render('/login')
-})
+});
+
 module.exports = router;
